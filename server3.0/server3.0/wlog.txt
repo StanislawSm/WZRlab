@@ -1,0 +1,5 @@
+height_map env: number_of_rows = 235, number_of_columns = 231
+my_car->iID = 762
+my_car->iID = 41
+my_car->iID = 467
+Koniec interakcji
