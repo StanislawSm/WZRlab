@@ -99,7 +99,7 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 				ob->iID = frame.iID;
 				other_cars[frame.iID] = ob;
 				allUsers[frame.iID].lastContact = clock(); //dodajemy info o ostatniej aktywnoœci klienta o danym id
-				allUsers[frame.iID].addres = frame.senderAddr;
+				allUsers[frame.iID].addres = buffer;
 			}
 			other_cars[frame.iID]->ChangeState(state);   // aktualizacja stateu obiektu obcego 
 			allUsers[frame.iID].lastContact = clock(); //dodajemy info o ostatniej aktywnoœci klienta o danym id
@@ -121,6 +121,7 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 				Frame frameToSend;
 				frameToSend.state = state;               // state w³asnego obiektu 
 				frameToSend.iID = it2->first;
+				frameToSend.senderAddr = sender->udpServAddr.sin_addr.S_un.S_addr;
 				sender->send((char*)&frameToSend, it2->second.addres, sizeof(Frame));  // wys³anie komunikatu do pozosta³ych aplikacji
 				it2++;
 			}
@@ -189,6 +190,7 @@ void VirtualWorldCycle()
 	Frame frame;
 	frame.state = my_car->State();               // state w³asnego obiektu 
 	frame.iID = my_car->iID;
+	frame.senderAddr = uni_reciv->udpClntAddr.sin_addr.S_un.S_addr;
 
 	uni_reciv->send((char*)&frame, servAddr, sizeof(Frame));  // wys³anie komunikatu do pozosta³ych aplikacji
 }

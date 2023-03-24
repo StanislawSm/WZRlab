@@ -87,8 +87,8 @@ int unicast_net::reciv(char *buffer,unsigned long *IP_Sender,unsigned short size
 		DieWithError("recvfrom() failed ");
 	} else {
 		*IP_Sender=udpClntAddr.sin_addr.s_addr;
-		return sSize;          
-	}         
-} 
+		return sSize;
+	}
+}
 
 // end
