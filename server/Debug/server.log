@@ -1,0 +1,18 @@
+﻿  objects.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\objects.cpp(32,14): warning C4305: "=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\objects.cpp(35,22): warning C4305: "=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\objects.cpp(43,63): warning C4305: "argument": obcięcie z "double" do "float"
+  quaternion.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\quaternion.cpp(64,41): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\quaternion.cpp(96,15): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\quaternion.cpp(103,13): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+  server.cpp
+  vector3D.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\vector3D.cpp(7,29): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\vector3D.cpp(101,10): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\vector3D.cpp(101,35): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\vector3D.cpp(121,10): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\vector3D.cpp(134,13): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\vector3D.cpp(164,14): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  Generowanie kodu...
+  server.vcxproj -> C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\Debug\server.exe

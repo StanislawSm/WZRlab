@@ -1,0 +1,109 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (client.vcxproj, wzr_vis.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+cl : wiersz polecenia warning D9035: Opcja "Gm" jest przestarzała i będzie usunięta w przyszłych wydaniach
+  vector3D.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\vector3D.cpp(7,29): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\vector3D.cpp(101,10): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\vector3D.cpp(101,35): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\vector3D.cpp(121,10): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\vector3D.cpp(134,13): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\vector3D.cpp(164,14): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+  net.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\net.cpp(41,32): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\net.cpp(54,32): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  objects.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(37,14): warning C4305: "=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(40,22): warning C4305: "=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(48,63): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(75,28): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(77,16): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(78,11): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(117,80): warning C4305: "=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(118,82): warning C4305: "=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(127,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(128,36): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(130,65): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(146,24): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(206,48): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(228,19): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(291,29): warning C4244: "argument": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(299,27): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(372,83): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(372,31): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(405,83): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(405,31): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(472,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(483,4): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(494,6): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(499,6): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(505,6): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\objects.cpp(518,7): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  quaternion.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\quaternion.cpp(64,41): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\quaternion.cpp(96,15): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\quaternion.cpp(103,13): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+  graphics.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(57,44): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(142,14): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(147,16): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(148,41): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(149,21): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(151,23): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(152,139): warning C4305: "argument": obcięcie z "double" do "GLclampf"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(152,117): warning C4244: "argument": konwersja z "double" do "GLclampf", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(152,87): warning C4244: "argument": konwersja z "double" do "GLclampf", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(152,45): warning C4244: "argument": konwersja z "double" do "GLclampf", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(153,28): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(153,28): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(153,56): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(153,56): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(153,90): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(153,90): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(156,56): warning C4244: "argument": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(156,30): warning C4244: "argument": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(156,16): warning C4244: "argument": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(163,33): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(163,33): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(163,63): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(163,63): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(163,93): warning C4838: konwersja z „double” do „GLfloat” wymaga konwersji zawężającej
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(163,93): warning C4244: "inicjowanie": konwersja z "double" do "GLfloat", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(352,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(393,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(394,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(396,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(397,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(403,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(404,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(407,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(410,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(415,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(416,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(418,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(419,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(430,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(431,24): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(432,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(433,22): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+  main.cpp
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(20,11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(120,39): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(122,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(340,50): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(403,63): warning C4305: "/=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(410,61): warning C4305: "*=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(436,37): warning C4305: "+=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(441,37): warning C4305: "-=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(462,23): warning C4305: "/=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(470,23): warning C4305: "*=": obcięcie z "double" do "float"
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(481,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(482,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(483,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(487,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(488,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(489,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(495,6): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generowanie kodu...
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\main.cpp(563): warning C4715: "WndProc”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\graphics.cpp(74): warning C4715: "GraphicsInitialisation”: niewszystkie ścieżki kodu zwracają wartość
+main.obj : warning LNK4075: zignorowano opcję „/EDITANDCONTINUE” z powodu określenia opcji „/SAFESEH”
+  wzr_vis.vcxproj -> C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\Debug\client2.exe
