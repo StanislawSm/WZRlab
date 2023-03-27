@@ -34,8 +34,14 @@ struct User {
 map<int, User> allUsers;
 double timeout = 1000;
 
-
-
+void sendFrameToAllUsers(Frame frameToSend, SOCKET s,  int slen) {
+	int frameLenght = sizeof(frameToSend);
+	auto it2 = allUsers.begin();
+	while (it2 != allUsers.end()) {
+		sendto(s, (char*)&frameToSend, frameLenght, 0, (struct sockaddr*)&it2->second.addres, slen);
+		it2++;
+	}
+}
 
 int main() {
 	SOCKET s;
@@ -108,21 +114,21 @@ int main() {
 			while (it != allUsers.end()) {
 				if ((clock() - it->second.lastContact) > timeout) {
 					printf("client %d was removed\n", it->first);
+					Frame removalFrameToSend;
+					removalFrameToSend.iID = it->first;
+					removalFrameToSend.type = 1; //removal
+					sendFrameToAllUsers(removalFrameToSend, s, slen);
 					it = allUsers.erase(it);
 				} else {
 					it++;
 				}
 			}
 
-			//wysyłanie info o zmianie gry do każdego klienta
-			auto it2 = allUsers.begin();
-			while (it2 != allUsers.end()) {
-				Frame frameToSend;
-				frameToSend.state = state;               // state własnego obiektu 
-				frameToSend.iID = frame->iID;
-				sendto(s, (char*)&frameToSend, recv_len, 0, (struct sockaddr*) &it2->second.addres, slen);  // wysłanie komunikatu do pozostałych aplikacji
-				it2++;
-			}
+			Frame frameToSend;
+			frameToSend.state = state;
+			frameToSend.iID = frame->iID;
+			frameToSend.type = 0; //update stanu pojazdu
+			sendFrameToAllUsers(frameToSend, s, slen);
 		}
 	}
 

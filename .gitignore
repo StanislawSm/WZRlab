@@ -5,3 +5,4 @@ client1.0/wlog.txt
 server/.vs
 server/Debug
 server/wlog.txt
+server/x64/Debug

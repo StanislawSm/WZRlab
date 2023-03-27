@@ -60,16 +60,28 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 		unsigned long buffer = 0;
 		int frame_size = netObject->reciv((char*)&frame, &buffer, sizeof(Frame));   // oczekiwanie na nadejœcie ramki 
 		if (frame_size > 0) {
-			ObjectState state = frame.state;
 			EnterCriticalSection(&m_cs);
-			if (frame.iID != my_car->iID) {
-				if ((other_cars.size() == 0) || (other_cars[frame.iID] == NULL)) {
-					MovableObject* ob = new MovableObject();
-					ob->iID = frame.iID;
-					other_cars[frame.iID] = ob;
+
+			switch (frame.type) {
+			case 0: //update stanu pojazdu
+				if (frame.iID != my_car->iID) {
+					if ((other_cars.size() == 0) || (other_cars[frame.iID] == NULL)) {
+						MovableObject* ob = new MovableObject();
+						ob->iID = frame.iID;
+						other_cars[frame.iID] = ob;
+					}
+					other_cars[frame.iID]->ChangeState(frame.state);
 				}
-				other_cars[frame.iID]->ChangeState(state);
+				break;
+
+			case 1: //removal frame
+				other_cars.erase(frame.iID);
+				break;
+
+			default:
+				break;
 			}
+			
 			LeaveCriticalSection(&m_cs);
 		}
 	}
@@ -129,6 +141,7 @@ void VirtualWorldCycle()
 	Frame frame;
 	frame.state = my_car->State();               // state w³asnego obiektu 
 	frame.iID = my_car->iID;
+	frame.type = 0; // uodate stanu pojazdu
 
 	netObject->send((char*)&frame, SERVER, sizeof(Frame));  // wys³anie komunikatu do pozosta³ych aplikacji
 }
