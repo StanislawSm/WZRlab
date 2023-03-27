@@ -1,6 +1,7 @@
-klient/klient/wzr23_1b/.vs
-klient/klient/wzr23_1b/Debug
+client1.0/.vs
+client1.0/Debug
+client1.0/wlog.txt
 
-server3.0/server3.0/.vs
-server3.0/server3.0/Debug
-server3.0/server3.0/wlog.txt
+server/.vs
+server/Debug
+server/wlog.txt
