@@ -1,2 +1,0 @@
-C:\Users\User\Documents\sem6\WZR\lab\lab1\sandbox\server\Debug\server.exe
-C:\Users\User\Documents\sem6\WZR\lab\WZRlab\server\Debug\server.exe

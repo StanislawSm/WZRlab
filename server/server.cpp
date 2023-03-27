@@ -82,7 +82,7 @@ int main() {
 		memset(frame, '\0', sizeof(Frame));
 
 		//try to receive some data, this is a blocking call
-		if ((recv_len = recvfrom(s, (char*)frame, BUFLEN, 0, (struct sockaddr*)&si_other, &slen)) == SOCKET_ERROR) {
+		if ((recv_len = recvfrom(s, (char*)frame, BUFLEN, 0, (struct sockaddr*)&si_other, &slen)) == SOCKET_ERROR && WSAGetLastError() != 10054) {
 			printf("recvfrom() failed with error code : %d", WSAGetLastError());
 			exit(EXIT_FAILURE);
 		}
@@ -103,16 +103,16 @@ int main() {
 			allUsers[frame->iID].car->ChangeState(state);   // aktualizacja stateu obiektu obcego 
 			allUsers[frame->iID].lastContact = clock(); //dodajemy info o ostatniej aktywności klienta o danym id
 
-			////usuwamy wszystkich nieaktywnych klientów
-			//auto it = allUsers.begin();
-			//while (it != allUsers.end()) {
-			//	if ((clock() - it->second.lastContact) > timeout) {
-			//		other_cars.erase(it->first);
-			//		it = allUsers.erase(it);
-			//	} else {
-			//		it++;
-			//	}
-			//}
+			//usuwamy wszystkich nieaktywnych klientów
+			auto it = allUsers.begin();
+			while (it != allUsers.end()) {
+				if ((clock() - it->second.lastContact) > timeout) {
+					printf("client %d was removed\n", it->first);
+					it = allUsers.erase(it);
+				} else {
+					it++;
+				}
+			}
 
 			//wysyłanie info o zmianie gry do każdego klienta
 			auto it2 = allUsers.begin();
