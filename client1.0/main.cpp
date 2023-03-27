@@ -44,6 +44,7 @@ struct Frame {
 	int iID;
 	int type;
 	ObjectState state;
+	int login;
 };
 
 unicast_net* netObject;          // wsk do obiektu zajmujacego sie odbiorem komunikatow
@@ -76,6 +77,11 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 
 			case 1: //removal frame
 				other_cars.erase(frame.iID);
+				break;
+
+			case 2: //saved state
+				my_car->state = frame.state;
+				my_car->iID = frame.iID;
 				break;
 
 			default:
@@ -141,7 +147,7 @@ void VirtualWorldCycle()
 	Frame frame;
 	frame.state = my_car->State();               // state w³asnego obiektu 
 	frame.iID = my_car->iID;
-	frame.type = 0; // uodate stanu pojazdu
+	frame.type = 0; // update stanu pojazdu
 
 	netObject->send((char*)&frame, SERVER, sizeof(Frame));  // wys³anie komunikatu do pozosta³ych aplikacji
 }
@@ -509,6 +515,33 @@ LRESULT CALLBACK WndProc(HWND main_window, UINT message_code, WPARAM wParam, LPA
 					wyni = WinExec(lan_win, SW_NORMAL);
 				}
 			}
+			break;
+		}
+		case '1':
+		{
+			Frame frame;
+			frame.iID = my_car->iID;
+			frame.type = 2; // login
+			frame.login = 1;
+			netObject->send((char*)&frame, SERVER, sizeof(Frame));
+			break;
+		}
+		case '2':
+		{
+			Frame frame;
+			frame.iID = my_car->iID;
+			frame.type = 2; // login
+			frame.login = 2;
+			netObject->send((char*)&frame, SERVER, sizeof(Frame));
+			break;
+		}
+		case '3':
+		{
+			Frame frame;
+			frame.iID = my_car->iID;
+			frame.type = 2; // login
+			frame.login = 3;
+			netObject->send((char*)&frame, SERVER, sizeof(Frame));
 			break;
 		}
 		case VK_ESCAPE:
