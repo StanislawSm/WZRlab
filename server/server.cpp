@@ -35,6 +35,8 @@ map<int, User> allUsers;
 double timeout = 1000;
 
 
+
+
 int main() {
 	SOCKET s;
 	struct sockaddr_in server, si_other;
@@ -74,7 +76,6 @@ int main() {
 
 	//keep listening for data
 	while (1) {
-		printf("Waiting for data...");
 		fflush(stdout);
 
 		//clear the buffer by filling null, it might have previously received data
@@ -86,7 +87,8 @@ int main() {
 			exit(EXIT_FAILURE);
 		}
 		//print details of the client/peer and the data received
-		printf("Received packet from %s:%d\n", inet_ntoa(si_other.sin_addr), ntohs(si_other.sin_port));
+		printf("%s:%d    ", inet_ntoa(si_other.sin_addr), ntohs(si_other.sin_port));
+		printf("ID: %d    type: %d\n", frame->iID, frame->type);
 		
 		ObjectState state = frame->state;
 		if (recv_len > 0) {

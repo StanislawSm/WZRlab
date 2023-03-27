@@ -1,6 +1,0 @@
-C:\Users\student\Desktop\184787\wzr23_1b\Debug\wzr_vis.exe
-C:\Users\User\Documents\sem6\WZR\lab\lab1\klient\wzr23_1b\Debug\client.exe
-C:\Users\User\Documents\sem6\WZR\lab\lab1\klient\klient\wzr23_1b\Debug\client.exe
-C:\Users\User\Documents\sem6\WZR\lab\WZRlab\klient\klient\wzr23_1b\Debug\client.exe
-C:\Users\User\Documents\sem6\WZR\lab\lab1\sandbox\client2.0\Debug\client.exe
-C:\Users\User\Documents\sem6\WZR\lab\WZRlab\client2.0\Debug\client2.exe
